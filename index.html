@@ -4,65 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <h1>Weather Forecast Application</h1>
-    <div class="container">
-        <div class="weather-input">
-            <h3>Enter City Name</h3>
-            <input  type="text" class="city-input" placeholder="Eg: Delhi, New York, Tokyo">
-            <button class="search-btn">Search</button>
-            <div class="separator"></div>
-            <button class="location-btn">Use Current Location</button>
+<body class=" bg-no-repeat ">
+    <h1 class="bg-violet-900 text-3xl text-center text-blue-300 py-4 w-full">Weather Forecast Application</h1>
+    <div class="container flex  justify-center items-center py-5 ml-6">
+        <div class="weather-input bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-opacity-75 rounded-lg p-8 text-yellow-200 text-center w-80">
+            <h3 class="text-2xl mb-4">Enter City Name</h3>
+            <input type="text" class="city-input w-full h-12 px-4 mb-4 border-2 border-gray-300 rounded-lg outline-none focus:border-purple-600" placeholder="Eg: Delhi, New York, Tokyo">
+            <button class="search-btn w-full py-2 mb-4 rounded-lg text-white text-lg bg-purple-800 hover:bg-blue-700 focus:outline-none">Search</button>
+            <div class="separator flex items-center justify-center my-6 w-full bg-slate-50 ">
+                <span class="text-gray-600 text-lg px-4 bg-white">or</span>
+            </div>
+            <button class="location-btn w-full py-2 rounded-lg text-white text-lg bg-gray-600 hover:bg-gray-500 focus:outline-none">Use Current Location</button>
         </div>
-        <div class="weather-data">
-            <div class="current-weather">
+        <div class="weather-data w-fit text-white ml-8">
+            <div class="current-weather bg-cover bg-center bg-no-repeat rounded-lg p-8 flex justify-between">
                 <div class="details">
-                    <h2>_______ ( ______ )</h2>
-                    <h6>Temperature: __°C</h6>
-                    <h6>Wind: __ m/s</h6>
-                    <h6>Humidity: __%</h6>
+                    <h2 class="text-3xl mb-4">_______ ( ______ )</h2>
+                    <h6 class="text-lg">Temperature: __°C</h6>
+                    <h6 class="text-lg">Wind: __ m/s</h6>
+                    <h6 class="text-lg">Humidity: __%</h6>
                 </div>
             </div>
-            <div class="days-forecast">
-                <h2>5-Day Forecast</h2>
-                <ul class="weather-cards">
-                    <li class="card">
-                        <h3>( ______ )</h3>
-                        <h6>Temp: __C</h6>
-                        <h6>Wind: __ m/s</h6>
-                        <h6>Humidity: __%</h6>
+            <div class="days-forecast mt-8">
+                <h2 class="text-2xl mb-4 text-blue-950 font-semibold">5-Day Forecast</h2>
+                <ul class="weather-cards flex gap-8">
+                    <li class="card flex-1  rounded-lg p-4  text-white ">
+                        <h3 class="text-xl font-medium">( ______ )</h3>
+                        <h6 class="text-lg">Temp: __C</h6>
+                        <h6 class="text-lg">Wind: __ m/s</h6>
+                        <h6 class="text-lg">Humidity: __%</h6>
                     </li>
-                    <li class="card">
-                        <h3>( ______ )</h3>
-                        <h6>Temp: __C</h6>
-                        <h6>Wind: __ m/s</h6>
-                        <h6>Humidity: __%</h6>
+                    <li class="card flex-1  rounded-lg p-4 text-white">
+                        <h3 class="text-xl font-medium">( ______ )</h3>
+                        <h6 class="text-lg">Temp: __C</h6>
+                        <h6 class="text-lg">Wind: __ m/s</h6>
+                        <h6 class="text-lg">Humidity: __%</h6>
                     </li>
-                    <li class="card">
-                        <h3>( ______ )</h3>
-                        <h6>Temp: __C</h6>
-                        <h6>Wind: __ m/s</h6>
-                        <h6>Humidity: __%</h6>
+                    <li class="card flex-1  rounded-lg p-4 text-white">
+                        <h3 class="text-xl font-medium">( ______ )</h3>
+                        <h6 class="text-lg">Temp: __C</h6>
+                        <h6 class="text-lg">Wind: __ m/s</h6>
+                        <h6 class="text-lg">Humidity: __%</h6>
                     </li>
-                    <li class="card">
-                        <h3>( ______ )</h3>
-                        <h6>Temp: __C</h6>
-                        <h6>Wind: __ m/s</h6>
-                        <h6>Humidity: __%</h6>
+                    <li class="card flex-1  rounded-lg p-4 text-white">
+                        <h3 class="text-xl font-medium">( ______ )</h3>
+                        <h6 class="text-lg">Temp: __C</h6>
+                        <h6 class="text-lg">Wind: __ m/s</h6>
+                        <h6 class="text-lg">Humidity: __%</h6>
                     </li>
-                    <li class="card">
-                        <h3>( ______ )</h3>
-                        <h6>Temp: __C</h6>
-                        <h6>Wind: __ m/s</h6>
-                        <h6>Humidity: __%</h6>
+                    <li class="card flex-1  rounded-lg p-4 text-white">
+                        <h3 class="text-xl font-medium">( ______ )</h3>
+                        <h6 class="text-lg">Temp: __C</h6>
+                        <h6 class="text-lg">Wind: __ m/s</h6>
+                        <h6 class="text-lg">Humidity: __%</h6>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <script src="weather.js"></script>
 </body>
 </html>

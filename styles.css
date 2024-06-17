@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+    background-image: url(img/sky.jpg);
+  }
+  h1 {
+    box-shadow: inset 0 -10px 15px rgb(219, 127, 22);
+  } 
+  .weather-input .separator {
+    height: 1px;
+  }
+  .weather-data .current-weather {
+    background-image:url(img/maincardbg.jpg);
+  }
+  .current-weather .icon {
+    text-align: center;
+  } 
+  .current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+  }
+  .current-weather .icon h6 {
+    margin-top: -10px;
+    text-transform: capitalize;
+  }
+  .weather-cards .card {
+    width: calc(100% / 5);
+    background-image:url(img/cardbg.jpg);
+  }
+  .weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+  }
+
+ 
