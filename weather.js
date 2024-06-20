@@ -1,10 +1,13 @@
+locationButton.addEventListener("click", getUserCoordinates);
+searchButton.addEventListener("click", getCityCoordinates);
+cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoordinates());
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather"); 
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
-const API_KEY = "";  //Api key
+const API_KEY = "cb3599f06fbc9c8610018e2d7d9be6cd";  //Api key
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) { // main weather card
