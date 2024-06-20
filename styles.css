@@ -32,7 +32,6 @@
     text-transform: capitalize;
   }
   .weather-cards .card {
-    width: calc(100% / 5);
     background-image:url(img/cardbg.jpg);
   }
   .weather-cards .card img {
