@@ -1,14 +1,10 @@
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const locationButton = document.querySelector(".location-btn");
-const currentWeatherDiv = document.querySelector(".current-weather");
-
-const API_KEY = "cb3599f06fbc9c8610018e2d7d9be6cd"; 
-<<<<<<< Updated upstream
-const weatherCardsDiv = document.querySelector(".weather-cards"); 
-=======
+const currentWeatherDiv = document.querySelector(".current-weather"); 
 const weatherCardsDiv = document.querySelector(".weather-cards");
->>>>>>> Stashed changes
+
+const API_KEY = "";  //Api key
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) { // main weather card
@@ -70,11 +66,7 @@ const getCityCoordinates = () => {
     if (cityName === "") return;
     const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
     
-<<<<<<< Updated upstream
-    // Get entered city coordinates (latitude, longitude, and name) from the API response
-=======
     // Get entered city coordinate
->>>>>>> Stashed changes
     fetch(API_URL).then(response => response.json()).then(data => {
         if (!data.length) return alert(`No coordinates found for ${cityName}`);
         const { lat, lon, name } = data[0];
@@ -97,11 +89,7 @@ const getUserCoordinates = () => {
                 alert("An error occurred while fetching the city name!");
             });
         },
-<<<<<<< Updated upstream
         error => { // Show alert 
-=======
-        error => { // Show alert if user denied the location permission
->>>>>>> Stashed changes
             if (error.code === error.PERMISSION_DENIED) {
                 alert("Geolocation request denied. Please reset location permission.");
             } else {
